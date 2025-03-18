@@ -1,0 +1,11 @@
+FROM pantsel/konga
+
+ENV DB_ADAPTER=postgres
+ENV DB_HOST=${KONG_PG_HOST}
+ENV DB_USER=${KONG_PG_USER}
+ENV DB_PASSWORD=${KONG_PG_PASSWORD}
+ENV DB_DATABASE=${KONG_PG_DATABASE}
+
+EXPOSE 1337
+
+CMD ["node", "/app/bin/konga.js", "-c", "start"]

@@ -1,2 +1,0 @@
-FROM pantsel/konga:latest
-CMD ["node", "app.js"]
