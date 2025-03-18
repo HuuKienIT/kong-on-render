@@ -1,0 +1,9 @@
+_format_version: "2.1"
+services:
+  - name: my-api
+    url: http://example.com
+    routes:
+      - name: my-api-route
+        paths:
+          - /api
+        strip_path: true
