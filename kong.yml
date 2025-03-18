@@ -1,7 +1,7 @@
 _format_version: "2.1"
 services:
   - name: my-api
-    url: https://phuongtien-4.onrender.com/docs
+    url: https://phuongtien-4.onrender.com
     routes:
       - name: my-api-route
         paths:
