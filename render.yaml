@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: kong-gateway
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: KONG_DATABASE
+        value: "off"
+      - key: KONG_DECLARATIVE_CONFIG
+        value: /etc/kong/kong.yaml
